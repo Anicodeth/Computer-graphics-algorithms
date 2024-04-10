@@ -34,8 +34,6 @@ void boundaryFill(sf::RenderWindow& window, int x, int y, sf::Color fillColor, s
                 window.draw(cell);
             }
         }
-
-        // Display the updated window
         window.display();
 
         // Add delay to visualize the animation
@@ -62,7 +60,6 @@ int main() {
         }
     }
 
-    // Create a rectangle in the grid
     int rectX = 3;
     int rectY = 3;
     int rectWidth = 4;
@@ -84,11 +81,8 @@ int main() {
                 boundaryFill(window, gridX, gridY, RED, BLACK);
             }
         }
-
-        // Display the window
         window.display();
     }
-
     return 0;
 }
 
